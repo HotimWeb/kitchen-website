@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #272829;
+    height: 100vh;
+}
+.fit{
+    color: #ff3838;
+}
+.wit{
+    color: white;
+}
+#navbar{
+    position: relative;
+    color: white;
+}
+#navbar h3{
+    font-family: 'Rochester', cursive;
+}
+#navbar nav{
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+}
+nav{
+    font-size: 10px;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    width: 50px;
+}
+nav ul li:hover{
+    background-color: #ff3838;
+    border-radius: 15px;
+    font-size: 13px;
+}
+nav  a{
+    text-decoration: none;
+    color: white;
+}
+#test{
+    width: 70px;
+}
+#top-container{
+    text-align: center;
+    color: white;
+}
+#top-container h1{
+    color: #ff3838;
+    font-family: 'Gwendolyn', cursive;
+    font-size: 50px;
+}
+#top-container p{
+    font-family: 'Roboto', sans-serif;
+}
+.main-content{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.main-content img{
+    height: 160px;
+    border: #ff3838;
+    border-radius: 10px;
+    justify-content: center;
+}
+.main-content div{
+    background-color: #ff3838;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+.main-content div :hover{
+    width: 290px;
+}
+.dot{
+    border-top: dotted 13px #ff3838;
+     width: 50px;
+     border-bottom: none;
+     border-left: none;
+     border-right: none;
+
+}
+#chefs{
+    text-align: center;
+    color: #ff3838;
+    font-family: 'Rochester', cursive;
+}
+#chefs h3{
+    font-family: 'Roboto', sans-serif;
+}
+.second-container{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 50px;
+    padding: 50px;
+}
+.second-container img{
+    height: 200px;
+    border-radius: 200px;
+}
+.second-container div{
+    justify-content: center;
+    border-radius: 15px;
+}
+.cal{
+    width: 200px;
+}
+/* for footer */
+.thid-container{
+    background-color: #272829;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.thid-container div{
+    color: white;
+}
+.thid-container table{
+    font-family: 'Roboto', sans-serif;
+}
+.thid-container h3{
+    font-family: 'Rochester', cursive;
+}
+.gem{
+    position: relative;
+}
+.gem p{
+    position: absolute;
+    top: 0px;
+    left:900px;
+}
+/* logo */
+.facebook{
+    height: 25px;
+}
+.instagram{
+    height: 25px;
+}
+.twitter{
+    height: 25px;
+}
+/* logo */
+.facebook{
+    height: 25px;
+}
+.instagram{
+    height: 25px;
+}
+.twitter{
+    height: 25px;
+}
+/* for animation */
+.slide-up{
+    height: 100px;
+    opacity: 0;
+}
+.slide-down{
+    height: 0;
+    opacity: 1;
+}
+/* for javascript */
+.pressed{
+    border: solid 2px #ff3838;
+    background-color: #ff3838;
+    border-radius: 15px;
+    font-size: 13px;
+}
+.slide-up{
+    height: 0;
+}
+/* tryout for animations */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+/* for toggle bar */
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+.tryout{
+    background-color: #ff3838;
+}
+/* for mobile reponsiveness */
+@media (min-width: 319px) and (max-width: 480px){
+    .toggle-button{
+        display:flex;
+    }
+    #navbar nav{
+        left: 10px;
+        top: 40px;
+    }
+    nav{
+        display: none       ;
+    }
+    nav ul{
+        align-items:center;
+    }
+    nav li{
+        text-align: center;
+        font-size: 8px;
+        width: 50px;
+        justify-content: space-evenly;
+    }
+    nav ul li:hover{
+        font-size: 10px;
+        background-color: transparent;
+    }
+    nav li a{
+        padding: .5rem 1rem;
+    }
+    nav li a:hover{
+        color: #ff3838;
+        font-size: 10px;
+    }
+    nav.active{
+        display: flex;
+    }
+    .pressed{
+    border-radius: 30px;
+    font-size: 9px;
+    }
+    .main-content{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .main-content img{
+        width: 90%;
+    }
+    .dot{
+        border-top: dotted 10px #ff3838;
+        width: 10%;
+    }
+    .second-container{
+        flex-direction: column;
+    }
+    .second-container img{
+        height: 200px;
+        /* width: 200px; */
+        /* border-radius: 50%; */
+    }
+        /* for footer */
+        .facebook{
+            height: 20px;
+        }
+        .instagram{
+            height: 20px;
+        }
+        .twitter{
+            height: 20px;
+        }
+        .thid-container{
+            display: flex;
+            flex-direction: column;
+            /* width: 100%; */
+        }
+        .thid-container table{
+            font-size: 12px;
+        }
+        .thid-container h3{
+            font-size: 13px;
+        }
+        .gem{
+            position: relative;
+        }
+        .gem p{
+            position: absolute;
+            left: 10px;
+            width: 500px;
+            font-size: 13px;
+        }
+    
+}

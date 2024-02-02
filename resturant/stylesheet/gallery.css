@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #28282B;
+}
+/* for toggle bar */
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+.wit{
+    color: white;
+}
+.fit{
+    color: #ff3838;
+}
+.topnav{
+    position: relative;
+    width: 100%;
+}
+.topnav nav{
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+}
+.topnav h2{
+    color: white;
+    font-family: 'Rochester', cursive; 
+}
+nav{
+    font-size: 10px;
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    cursor: pointer;
+    padding: 0.5rem;
+    justify-content: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    width: 50px;
+    font-weight: 100;
+}
+nav ul li:hover{
+    border-radius: 15px;
+    background-color: #ff3838;
+    font-size: 13px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+#test{
+    width: 70px;
+}
+.top-container{
+    text-align: center;
+}
+img{
+    height: 200px;
+}
+.top-container h1{
+    color: #ff3838;
+    font-size: 50px;
+    font-family: 'Gwendolyn', cursive;
+}
+.top-container p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.content{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 300px 150px 150px 300px;
+    padding: 30px;
+}
+#first-content img{
+    height: 620px;
+    width: 100%;
+}
+#second-content img{
+    height: 296px;
+    width: 100%;
+}
+#third-content img{
+    height: 620px;
+    width: 100%;
+}
+
+#fourth-content img{
+    height: 307px;
+    width: 100%;
+}
+/* for div */
+
+#first-content{
+    grid-row: 1/4;
+}
+#second-content{
+    grid-column: 2/4;
+    border: solid 2px #ff3838;
+}
+#third-content{
+    grid-row: 1/4;
+}
+#fourth-content{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border: solid 2px #ff3838;
+}
+/* footer */
+.thid-container{
+    background-color: #28282B;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.thid-container div{
+    color: white;
+}
+.thid-container table{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.thid-container h3{
+    font-family: 'Rochester', cursive;
+}
+.gem{
+    position: relative;
+}
+.gem p{
+    position: absolute;
+    top: 0px;
+    left:820px;
+    font-family: 'Roboto', sans-serif;
+}
+/* logo */
+.facebook{
+    height: 25px;
+}
+.instagram{
+    height: 25px;
+}
+.twitter{
+    height: 25px;
+}
+h2 {
+    font-size: 16px;
+}
+/* for javascript */
+.pressed{
+    border: solid 2px #ff3838;
+    background-color: #ff3838;
+    border-radius: 15px;
+    font-size: 13px;
+}
+@media (min-width: 319px) and (max-width: 480px){
+    /* for toogle */
+    .toggle-button{
+        display:flex;
+    }
+    .topnav nav{
+        left: 10px;
+        top: 10px;
+    }
+    nav{
+        display: none;
+    }
+    nav ul{
+        align-items:center;
+    }
+    nav li{
+        text-align: center;
+        font-size: 8px;
+        width: 50px;
+        justify-content: space-evenly;
+    }
+    nav ul li:hover{
+        font-size: 10px;
+        background-color: transparent;
+    }
+    nav li a{
+        padding: .5rem 1rem;
+    }
+    nav li a:hover{
+        color: #ff3838;
+        font-size: 10px;
+    }
+    nav.active{
+        display: flex;
+    }
+    .pressed{
+    border-radius: 30px;
+    font-size: 9px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #first-content img{
+        height: 620px;
+    }
+        /* for footer */
+        .facebook{
+            height: 20px;
+        }
+        .instagram{
+            height: 20px;
+        }
+        .twitter{
+            height: 20px;
+        }
+        .thid-container{
+            display: flex;
+            flex-direction: column;
+            /* width: 100%; */
+        }
+        .thid-container table{
+            font-size: 12px;
+        }
+        .thid-container h3{
+            font-size: 13px;
+        }
+        .gem{
+            position: relative;
+        }
+        .gem p{
+            position: absolute;
+            left: 10px;
+            width: 500px;
+            font-size: 13px;
+        }
+    
+}
